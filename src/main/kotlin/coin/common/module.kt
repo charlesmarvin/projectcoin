@@ -26,7 +26,7 @@ import io.ktor.util.KtorExperimentalAPI
 import java.util.concurrent.TimeUnit
 
 @KtorExperimentalAPI
-fun io.ktor.application.Application.servicemodule() {
+fun io.ktor.application.Application.bootstrap() {
   val jwtIssuer = environment.config.property("jwt.issuer").getString()
   val jwtAudience = environment.config.property("jwt.audience").getString()
   val jwtRealm = environment.config.property("jwt.realm").getString()

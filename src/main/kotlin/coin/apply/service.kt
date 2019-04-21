@@ -4,7 +4,6 @@ import coin.common.ApiPrincipal
 import coin.common.IdProvider
 import coin.common.Repository
 import coin.identity.PersonService
-import io.ktor.request.ApplicationRequest
 import java.time.Instant
 
 interface ApplicationService {
